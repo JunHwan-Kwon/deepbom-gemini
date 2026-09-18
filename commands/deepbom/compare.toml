@@ -1,0 +1,9 @@
+description = "Compare two model artifacts of the same format using static evidence."
+prompt = """
+Use the DEEPBOM MCP deepbom_diff tool to compare the user's baseline and candidate.
+If both paths and their roles are not clear, ask for the missing paths or roles.
+Keep the comparison bound to the returned full artifact hashes. Report supported
+structural and storage changes and evidence limits; do not infer accuracy or measured speedups.
+
+User request: {{args}}
+"""

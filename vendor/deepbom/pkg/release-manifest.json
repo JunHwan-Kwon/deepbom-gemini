@@ -1,0 +1,36 @@
+{
+  "schema": "deepbom.npm_release.v1",
+  "version": "1.103.0",
+  "source": {
+    "git_commit": "133860b79b941aff0c327fa95813e13fb03c4ce6",
+    "git_state": "clean",
+    "distribution": "public_channel"
+  },
+  "runtime": {
+    "node": ">=20",
+    "tflite_wasm_sha256": "bcc9e81d9d7929d29b6e510328eb840af3c0e66387c350dc02b7282271dded87",
+    "self_test": {
+      "file": "bin/deepbom-self-test.onnx",
+      "sha256": "82a2feef00eb6ab03d82f2b30cd17f4d826e2d8307cb059eccd6a0f3120059b2"
+    }
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "LICENSE"
+  },
+  "public_bundle_input_count": 171,
+  "supported_inputs": [
+    "tflite",
+    "onnx",
+    "onnx_external_data",
+    "gguf",
+    "safetensors",
+    "safetensors_sharded_repository",
+    "coreml_mlmodel",
+    "coreml_mlpackage",
+    "executorch_pte",
+    "executorch_ptd",
+    "tensorrt_evidence",
+    "tensorrt_llm_contract"
+  ]
+}

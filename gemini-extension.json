@@ -1,0 +1,14 @@
+{
+  "name": "deepbom",
+  "version": "1.0.0",
+  "description": "Inspect AI model artifacts locally: SHA-256, structure, quantization, defects, cautions, and evidence gaps.",
+  "mcpServers": {
+    "deepbom": {
+      "command": "node",
+      "args": ["${extensionPath}/server.mjs", "${workspacePath}"],
+      "cwd": "${workspacePath}",
+      "timeout": 120000
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

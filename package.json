@@ -1,0 +1,19 @@
+{
+  "name": "deepbom-gemini",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local AI model artifact evidence for Gemini CLI",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "check:vendor": "node scripts/vendor.mjs --check",
+    "test": "node --test test/*.test.mjs",
+    "package": "node scripts/package.mjs"
+  },
+  "devDependencies": {
+    "adm-zip": "0.6.1",
+    "deepbom": "1.103.0"
+  }
+}

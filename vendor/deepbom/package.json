@@ -1,0 +1,52 @@
+{
+  "name": "deepbom",
+  "version": "1.103.0",
+  "mcpName": "io.github.JunHwan-Kwon/deepbom",
+  "description": "Local multi-format deployment-artifact analysis for on-device AI models",
+  "type": "module",
+  "bin": {
+    "deepbom": "bin/deepbom.mjs"
+  },
+  "files": [
+    "bin/",
+    "pkg/",
+    "skills/deepbom/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://deepbom.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunHwan-Kwon/deepbom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JunHwan-Kwon/deepbom/issues"
+  },
+  "author": "Jun-Hwan Kwon",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "tflite",
+    "onnx",
+    "gguf",
+    "safetensors",
+    "coreml",
+    "executorch",
+    "tensorrt",
+    "quantization",
+    "on-device",
+    "ml-bom",
+    "cyclonedx",
+    "sarif",
+    "static-analysis",
+    "agent-skills",
+    "model-context-protocol",
+    "mcp",
+    "chatgpt"
+  ]
+}

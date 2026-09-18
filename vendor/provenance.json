@@ -1,0 +1,15 @@
+{
+  "name": "deepbom",
+  "version": "1.103.0",
+  "source": "https://registry.npmjs.org/deepbom/-/deepbom-1.103.0.tgz",
+  "npm_integrity": "sha512-pDjULG07vEeBXoRwPWDcXmRHSqMLvNXz2Ki31sGS7/1Eah4r7Dr1lDwwh4362/SrcGdroSs+Etcww8TbNKHUcw==",
+  "files": {
+    "LICENSE": "8c0bd337f6886285c89d0d4bdda46e4a167092bcce746f93bfd95684f3885d9b",
+    "README.md": "f8c93070bd8b79402496880dc971f01f907368375ac38f8e388c520ca0e346e3",
+    "bin/deepbom-self-test.onnx": "82a2feef00eb6ab03d82f2b30cd17f4d826e2d8307cb059eccd6a0f3120059b2",
+    "bin/deepbom.mjs": "1b5b396ecbb988de200ccdafab45f1676b139823b45f3b001353dbd72bb4aee3",
+    "package.json": "a1b5a86408edb0f3dae04ab280904855fe2e284319363a291fbb95542e8ce1b1",
+    "pkg/release-manifest.json": "20907f1620f54d33545565df40a42813cfe301709e16aedd4b07da0a711aec21",
+    "pkg/tflite_wasm_audit_bg.wasm": "bcc9e81d9d7929d29b6e510328eb840af3c0e66387c350dc02b7282271dded87"
+  }
+}

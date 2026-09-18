@@ -1,0 +1,9 @@
+DEEPBOM for Gemini CLI
+Copyright 2026 Jun-Hwan Kwon
+
+Includes the DEEPBOM engine under Apache-2.0.
+Engine source: https://github.com/JunHwan-Kwon/deepbom
+Published package provenance: vendor/provenance.json
+
+Google and Gemini are trademarks of their respective owners.
+This independently published extension does not imply endorsement by Google.

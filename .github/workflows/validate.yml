@@ -1,0 +1,34 @@
+name: Validate Gemini extension
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm audit --audit-level=high
+      - run: npm run check:vendor
+      - run: npm test
+      - run: npm run package
+      - name: Install pinned Gemini CLI
+        run: npm install --global @google/gemini-cli@0.60.0
+      - name: Verify Gemini CLI installation and MCP connection
+        run: node scripts/check-host.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: extension-${{ matrix.os }}
+          path: dist/

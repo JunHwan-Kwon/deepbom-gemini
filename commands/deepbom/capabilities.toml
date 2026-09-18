@@ -1,0 +1,6 @@
+description = "Show supported DEEPBOM formats, outputs, and analysis limits."
+prompt = """
+Call deepbom_capabilities on the DEEPBOM MCP server and summarize its supported
+artifact formats, output options, and local-analysis privacy boundaries.
+Answer any additional question using that returned evidence: {{args}}
+"""

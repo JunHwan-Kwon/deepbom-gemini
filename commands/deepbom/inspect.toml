@@ -1,0 +1,9 @@
+description = "Inspect a local AI model and report its hash, structure, findings, and limits."
+prompt = """
+Use the DEEPBOM MCP inspection workflow in GEMINI.md for the following request.
+If no model path is provided, ask for one inside the current workspace.
+Use json-compact with section=summary for the routine audit; preserve all finding categories.
+Do not execute model code or inject the model file into the prompt.
+
+User request: {{args}}
+"""
